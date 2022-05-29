@@ -61,8 +61,7 @@ public class TestSuite {
         }
 
     @Test
-    public void test5(){
-        try {
+    public void test5() throws Exception {
             Cart page = new Cart("Chrome",true,"http://automationpractice.com/","Automation Practical","Test Case 5");
             page.searchBox("blouse");
             page.addcarts();
@@ -71,22 +70,18 @@ public class TestSuite {
             Assert.assertTrue(page.totalPrice());
             page.shutdown();
             page.flush();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
 
     }
 
     @Test
-    void test6(){
-        try {
+    void test6() throws Exception {
+
             Site mainpage = new Site("Chrome",true,"http://automationpractice.com/","Automation Practical","Test Case 6");
             Assert.assertEquals(mainpage.randomPageSelectionChecker(),true);
             mainpage.shutdown();
             mainpage.flush();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
     }
 
 }
