@@ -47,16 +47,13 @@ public class TestSuite {
         }
 
     @Test
-        public void test4(){
-            try {
+        public void test4() throws Exception {
+
                 RegisterPage page = new RegisterPage("Chrome",true,"http://automationpractice.com/","Automation Practical","Test Case 2");
                 page.login(username,password);
                 page.searchBox("Blouse");
                 page.shutdown();
                 page.flush();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
 
         }
 
