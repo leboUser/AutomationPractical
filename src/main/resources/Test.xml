@@ -1,0 +1,62 @@
+<suite name="Site" verbose="10">
+
+    <test name="Test 1 search Box" enabled="false">
+        <classes>
+            <class name="TestSuite">
+                <methods>
+                    <include name="test1" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test 2 search 3 values" enabled="false">
+        <classes>
+            <class name="TestSuite">
+                <methods>
+                    <include name="test2" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test 3 Using File" enabled="false">
+        <classes>
+            <class name="TestSuite">
+                <methods>
+                    <include name="test3" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test 4 Login" enabled="false">
+    <classes>
+        <class name="TestSuite">
+            <methods>
+                <include name="test4" />
+            </methods>
+        </class>
+    </classes>
+</test>
+
+    <test name="Test 5 Calculating quantity" enabled="false">
+        <classes>
+            <class name="TestSuite">
+                <methods>
+                    <include name="test5" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test 5 Calculating quantity" enabled="true">
+        <classes>
+            <class name="TestSuite">
+                <methods>
+                    <include name="test5" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
